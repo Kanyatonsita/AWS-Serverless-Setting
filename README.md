@@ -14,8 +14,8 @@ Register: n
 Deploy: n
 ```
 - Navigera till mappen som skapats.
-Öppna projektet i vsCode och skriva;
-```
+Öppna projektet i vsCode och skriva:
+```yml
 service: booking-api
 frameworkVersion: '3'
 useDotenv: true
@@ -56,16 +56,16 @@ npm init -y (för att skapa package.json)
 npm install --save-dev serverless-webpack (installerar webpack)
 ```
 I serverless.yml lägg till:
-```
+```yml
 plugins:
   - serverless-webpack
 
 package:
   individually: true
 ```
-Lägg till ny fil i projekt:
-- webpack.config.js det ska innehålla:
-```
+Lägg till ny fil i roten av projektet:
+`webpack.config.js` det ska innehålla:
+```yml
 module.exports = {
     mode: 'development'
 };
@@ -100,13 +100,13 @@ sls deploy
 
 Lägg till:
     useDotenv: true
-```
+```yml
 service: booking-api
 frameworkVersion: '3'
 useDotenv: true
 ```
 Ändra provider så att det ser ut så här:
-```
+```yml
 provider:
   name: aws
   runtime: nodejs18.x
@@ -120,7 +120,7 @@ Skapa ny-fil i roten av projektet:
 Döp den till .env
 ```
 I .env-filen lägg tii:
-```
+```yml
 AWS_PROFILE="din-profil"
 AWS_IAM_ROLE="arn:aws:iam::xxxxxxxxxxxx:role/dinroll"
 ```
