@@ -9,7 +9,7 @@ I terminalen:
 ```
 serverless
 Välj AWS - Node.js - Starter 
-Välj namn för projektet ex. dog-api-serverless
+Välj namn för projektet ex. rooms-api-serverless
 Register: n
 Deploy: n
 ```
