@@ -1,6 +1,6 @@
 # Sätta upp nytt projekt med serverless
 
-Installerat serverless på datorn:
+Installerat serverless på datorn: 
 ```
 npm install -g serverless
 ```
