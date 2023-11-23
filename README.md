@@ -9,12 +9,12 @@ I terminalen:
 ```
 serverless
 Välj AWS - Node.js - Starter 
-Välj namn för projektet ex. rooms-api-serverless
+Välj namn för projektet ex. booking-api
 Register: n
 Deploy: n
 ```
 - Navigera till mappen som skapats.
-Öppna projektet i vsCode och skriva:
+- Öppna projektet i vsCode och skriva:
 ```yml
 service: booking-api
 frameworkVersion: '3'
