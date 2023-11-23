@@ -50,12 +50,11 @@ functions:
           method: POST
 ```
 
-Installera Serverless webpack till projekt:
-```
-npm init -y (för att skapa package.json)
-npm install --save-dev serverless-webpack (installerar webpack)
-```
-I serverless.yml lägg till:
+- Installera Serverless webpack till projekt:
+`npm init -y` (för att skapa package.json)
+`npm install --save-dev serverless-webpack` (installerar webpack)
+
+- I serverless.yml lägg till:
 ```yml
 plugins:
   - serverless-webpack
@@ -63,18 +62,17 @@ plugins:
 package:
   individually: true
 ```
-Lägg till ny fil i roten av projektet:
+- Lägg till ny fil i roten av projektet:
 `webpack.config.js` det ska innehålla:
 ```yml
 module.exports = {
     mode: 'development'
 };
-
-För att ladda upp till aws:
-sls deploy
 ```
+För att ladda upp till aws skriv `sls deploy`
 
-###Om man får:
+
+##Om man får:
 ```
 Error:
 AWS profile ”din”_profil doesn't seem to be configured
