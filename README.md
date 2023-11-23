@@ -72,7 +72,7 @@ module.exports = {
 För att ladda upp till aws skriv `sls deploy`
 
 
-##Om man får:
+## Om man får:
 ```
 Error:
 AWS profile ”din”_profil doesn't seem to be configured
