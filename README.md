@@ -51,8 +51,8 @@ functions:
 ```
 
 - Installera Serverless webpack till projekt:
-`npm init -y` (för att skapa package.json)
-`npm install --save-dev serverless-webpack` (installerar webpack)
+- `npm init -y` (för att skapa package.json)
+- `npm install --save-dev serverless-webpack` (installerar webpack)
 
 - I serverless.yml lägg till:
 ```yml
